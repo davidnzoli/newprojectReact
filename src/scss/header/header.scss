@@ -1,0 +1,118 @@
+.header-second{
+    
+        background-image: url('../../../public/background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100% auto;
+       padding-bottom: 9rem;
+     color: #56c2d9;
+   
+
+     .header-btn:hover{
+        border-color: #6494c6; 
+        color: #56c2d9;
+     }
+ 
+    
+}
+
+.header-content{
+    padding: 2rem;
+    font-family: Century Gothic;
+}
+
+.header-content-text{
+    padding-top: 12rem;
+    .name-developer{
+        font-size: 4rem;
+        font-weight: bold;
+      
+       }
+    .picture{
+        //background-color: #f6f6f6;
+        background-color: rgb(255, 255, 255,0.1);
+        box-shadow: 20px ;
+        backdrop-filter: blur(30px);
+       
+
+        border-radius: 15px;
+        img{
+            object-fit: cover;
+            }
+     }
+    
+}
+
+.box-image{
+    padding-top: 2rem; 
+}
+
+
+
+
+// RESPONSIVE
+
+@media (max-width:992px) {
+    .header-content-text{
+         padding-top: 4rem;
+         .picture{
+            display: none;
+         }
+         .name-developer{
+            font-size: 3.5rem;
+          
+           }
+           .short-description-text{
+            font-size: 3.2rem;
+           }
+   
+        
+    }
+    .header-content{
+     
+        font-family: Century Gothic;
+    }
+    
+   
+}
+
+@media (max-width:600px) {
+    .header-content-text{
+        padding-top: 6rem;
+        .name-developer{
+            font-size: 2rem;
+            font-family: Century Gothic;
+            font-weight: bold;
+            text-transform: capitalize;
+          
+           }
+           .short-description-text{
+            font-size: 2rem;
+           }
+   
+       }
+
+       .header-second{
+    
+        background-image: url('../../../public/background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100% auto;
+        padding-top: 5rem;
+       padding-bottom: 16rem;
+     color: #56c2d9;
+   
+
+     .header-btn:hover{
+        border-color: #6494c6; 
+        color: #56c2d9;
+     }
+ 
+    
+}
+
+}
+
+//<Button variant="outlined" sx={{ borderRadius: 50}}  className="header-btn">project </Button>

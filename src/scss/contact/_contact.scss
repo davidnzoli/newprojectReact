@@ -1,0 +1,28 @@
+.contact{
+    background-color: #fbfbfb;
+    padding: 15px;
+    .contact-btn{
+      width: 100%;
+      color: #fbfbfb;
+      font-size: 25px;
+      height: 40px;
+       border-radius: 5px;
+      border-color: #56c2d9;
+      text-transform: capitalize;
+      background-color:#56c2d9 ;
+      &:hover{
+         background-color:#56c2d9 ; 
+      }
+   }
+
+   .input-field{
+      border-color: #56c2d9;
+   }
+
+  .contact-content{
+    background-color: #fbfbfb;
+  
+
+     
+  }
+}

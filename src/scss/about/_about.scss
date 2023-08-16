@@ -1,0 +1,30 @@
+.about{
+    padding-top: 20px;
+   background-color: #f1f1f1;
+   padding-bottom: 20px;
+ .about-title{
+    color:#56c2d9 ;
+    font-family: Century Gothic;
+ }
+
+ .about-content{
+    color:#4d4d4d;
+    font-family: Century Gothic ;
+    font-size: 22px;
+    font-family: Century Gothic;
+ }
+ .picture{
+    background-color: #f6f6f6;
+    img{
+        object-fit: cover;
+        }
+ }
+ .picture img{
+ object-fit: fill;
+ }
+}
+
+.about-title{
+    color:#56c2d9 ;
+    font-family: Century Gothic;
+ }

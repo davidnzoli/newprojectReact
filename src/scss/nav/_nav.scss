@@ -1,0 +1,146 @@
+
+
+.nav-bar{
+width: 100%;
+height: 60px;
+max-width: 1200px;
+   display: flex;
+   padding: 10px;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+}
+.name-developer{
+    color: #f5f5f5;
+}
+.nav-bar .logo a{
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .full-stack{
+        color: #56c2d9;
+    }
+    &:hover{
+        color: white;
+    }
+
+}
+.nav-bar .links{
+    display: flex;
+    gap: 2rem;
+}
+.nav-bar .toggle-btn{
+    color: #56c2d9;
+    margin-top:20px ;
+    margin-right: 10px;
+    font-size: 2.5rem;
+font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+li{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: #56c2d9;
+        font-weight: bolder;
+        font-size: 20px;
+        &:hover{
+    
+            color: #82E3F8 ;
+        }
+    }
+}
+
+
+
+.action-btn{
+    margin-right: 15px;
+    background-color: #56c2d9;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    text-decoration: none;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+header{
+   
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(60px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+ box-shadow: 0px 0px 0px 0.2px #56c2d9;
+
+}
+
+
+
+
+//drop down
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top:60px ;
+    right: 2rem;
+    width: 300px;
+    background-color:   rgb(245,245,245,0.6);
+   // background-color: rgb(255, 255, 255,0.1);
+   backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.dropdown-menu.open{
+    height: 240px;
+}
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+// RESPONSIVE
+
+@media (max-width:992px) {
+    .nav-bar .links,
+    .nav-bar .action-btn{
+        display: none;
+    }
+    .nav-bar .toggle-btn{
+   display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+
+}
+
+
